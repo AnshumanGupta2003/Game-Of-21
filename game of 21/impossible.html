@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>     <link rel="shortcut icon" href="css/img/icons8-game-controller-50.png" type="image/x-icon">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of 21</title>
+    <link rel="stylesheet" href="css/console.css">
+    <link rel="stylesheet" href="css/easy.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h2>Welcome Sir/Mam</h2>
+        <h3>Game of 21</h3>
+        
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="playericon">
+            <div class="prv_ent" id="prv_ent_easy"></div>
+            
+            <div class="icon1">
+                <div>→</div>
+                <div id="playerid">Your Turn</div>
+                <img src="css/img/online-xl.png" alt="your turn" width=20px>
+            </div>
+            <h4 style="color: black;">Choose one</h4>
+            <ol>
+                <li><button id="btn1" onclick="startGame('btn1')"></button></li>
+                <li><button id="btn2" onclick="startGame('btn2')"></button></li>
+                <li><button id="btn3" onclick="startGame('btn3')"></button></li>
+            </ol>
+        </div>
+
+        
+        <div class="comp_ent">
+            <h2 class="comp_data"></h2>
+        </div>
+        
+        <div class="win_box" style="display: none;">
+            <h3 class="win_msg"></h3>
+            <h2 id="winname">Congratulations🎉🎉 <br> You Won</h2>
+            <button class="win_button" onclick="playAgain()">
+                Play Again
+            </button>
+            <button class="win_button">
+                <a href="index.html">Back To Menu</a>
+            </button>
+        </div>
+
+    </div>
+
+    <button class="quit" style="width: 100px;height: 40px" ondblclick="quit()">Double click to Quit</button>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><img
+                    src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png"
+                    alt="Facebook"></a>
+            <a href="#" class="social-icon"><img
+                    src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/twitter-512.png" alt="Twitter"></a>
+            <a href="#" class="social-icon"><img
+                    src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/instagram-512.png"
+                    alt="Instagram"></a>
+        </div>
+        <p>&copy; 2024 Game of 21. All rights reserved.</p>
+    </footer>
+
+    <script src="js/impossible.js"></script>
+    <script src="js/audio.js"></script>
+</body>
+
+</html>

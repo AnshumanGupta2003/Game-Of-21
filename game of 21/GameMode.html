@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>     <link rel="shortcut icon" href="css/img/icons8-game-controller-50.png" type="image/x-icon">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Mode</title>
+    <link rel="stylesheet" href="css/console.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h2>Welcome Sir/Mam </h2>
+        <h3>Game of 21</h3>
+        
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Menu -->
+        <div class="menu" >
+            
+            <ul  class="dropdown">
+                <h2>Choose Mode</h2>
+                <li><a href="PvP.html">2 Player Mode</a></li>
+                <li><a onclick="easy()">Easy Mode</a></li>
+                <li><a onclick="hard()">Hard Mode</a></li>
+                <li><a href="impossible.html">Impossible Mode</a></li>
+                <li><a href="index.html" class="back-button">Back</a></li>
+                
+            </ul>
+        </div>
+        
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><img
+                    src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png"
+                    alt="Facebook"></a>
+            <a href="#" class="social-icon"><img
+                    src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/twitter-512.png" alt="Twitter"></a>
+            <a href="#" class="social-icon"><img
+                    src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/instagram-512.png"
+                    alt="Instagram"></a>
+        </div>
+        <p>&copy; 2024 Game of 21. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        function easy(){
+
+            window.location.href = "turn.html?mode=" + encodeURIComponent("easy");
+            
+        }
+
+        function hard(){
+            
+            window.location.href = "turn.html?mode=" + encodeURIComponent("hard");
+            
+        }
+        
+
+    </script>
+    <script src="js/audio.js"></script>
+</body>
+
+</html>
